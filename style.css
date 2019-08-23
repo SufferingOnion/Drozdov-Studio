@@ -1,0 +1,526 @@
+@charset "UTF-8";
+/*-------------------Шрифты-----------------------------------------------------------------------------*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url(fonts/Montserrat-Medium.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url(fonts/Montserrat-Medium-en.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(fonts/Montserrat-Bold.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(fonts/Montserrat-Bold-en.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+body {
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 1em;
+  background-color: black; }
+
+h1, h2, h3, h4 {
+  margin: 0px; }
+
+body {
+  width: 1920px;
+  margin: 0px;
+  overflow-x: hidden; }
+
+/*---------------Начало----------------------------------------------------------------------------------------------*/
+.intro {
+  width: 100vw;
+  height: 100vh;
+  background: url("img/header/background.jpg") top right no-repeat;
+  background-size: cover; }
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 15.64815vh; }
+
+/*---------------------Меню---------------------------------------------------------*/
+.open_menu {
+  width: 49.63542vw;
+  height: 8.70741vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right: 5.625vw; }
+
+.logo {
+  width: 6.25vw;
+  height: 1.57778vh;
+  margin-top: 6.85185vh;
+  margin-right: 32.86458vw;
+  margin-left: 5.625vw; }
+
+.link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9375vmax; }
+
+/*-----------------Мобильный вид меню----------------------------------------------------*/
+@media all and (max-width: 780px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50vh;
+    width: 100vw; }
+  .open_menu {
+    margin-left: auto;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 185px; }
+  .button {
+    margin-right: 5%; }
+  .logo {
+    display: inline-block;
+    width: 120px;
+    margin-right: 20%;
+    margin-left: 5%; }
+  .link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal; }
+  .lang {
+    margin-right: 3%;
+    margin-left: 1.5%; }
+  .button {
+    width: 26px;
+    height: 10px; }
+  .closed {
+    display: block;
+    width: 100vw;
+    height: 2px;
+    background-color: #fff; }
+  .closed::after {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    content: ""; }
+  .closed::after {
+    top: 10px; }
+  .opened {
+    transform: rotate(45deg); }
+  .opened::after {
+    top: 0px;
+    transform: rotate(-90deg); } }
+
+.work_with_ass {
+  text-shadow: 0 0 0.5em white, 0 0 0.4em white; }
+
+/*-------------------Буквы начало--------------------------------*/
+.tagline {
+  margin-top: 43.14815vh;
+  display: flex; }
+
+.line {
+  width: 11.69271vw;
+  height: 1px;
+  background-color: #fff; }
+
+.letters {
+  color: #fff;
+  display: block;
+  font-size: 5.10417vmax;
+  font-weight: bold;
+  line-height: 4.16667vmax; }
+
+.bukva {
+  font-size: 5.10417vmax;
+  font-weight: bold;
+  opacity: 0;
+  line-height: 4.16667vmax; }
+
+.dorogo {
+  color: transparent;
+  line-height: 4.16667vmax;
+  -webkit-text-stroke: 1px white; }
+
+/*--------------- СЕРВАЙСЕЗ -----------------------------------------------------------------------------------------*/
+.web-serv {
+  width: 100vw;
+  height: 50.78125vmax;
+  margin-top: 16.57407vh;
+  display: flex;
+  flex-direction: row; }
+
+.serv-div {
+  width: 25vw;
+  height: 90.27778vh; }
+
+.viebon {
+  width: 73.75vmax;
+  height: 50.78125vmax;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between; }
+
+.devimg {
+  width: 73.75vmax;
+  height: 24.79167vmax;
+  background: url("img/header/website-developing.png") top right no-repeat;
+  background-size: cover;
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.1); }
+
+.web-dev {
+  width: 36.14583vmax;
+  height: 24.79167vmax;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: url("img/header/design.png") top right no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.web-dev2 {
+  width: 36.14583vmax;
+  height: 24.79167vmax;
+  background: url("img/header/identity.png") top right no-repeat;
+  background-size: cover;
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.1); }
+
+.predlog {
+  color: #fff;
+  font-size: 1.45833vmax;
+  text-decoration: none;
+  font-weight: bold;
+  position: absolute;
+  line-height: 51px;
+  left: 2em;
+  bottom: 2em; }
+
+.serv {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  font-size: 11.92708vmax;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin-left: 25%; }
+
+@media (max-width: 780px) {
+  .serv-div {
+    display: none; } }
+
+/*--------------------------Недавние проекты-------------------------------------------------------------------------------*/
+.project-block {
+  width: 100vw;
+  min-height: 89.27083vmax;
+  margin-top: 27.5vh; }
+
+.last-project {
+  color: #fff;
+  margin-left: 5.625vw;
+  font-size: 5.10417vmax;
+  font-weight: bold; }
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly; }
+
+.project1 {
+  width: 43.75vmax;
+  height: 27.39583vmax;
+  margin-bottom: 3.125vmax;
+  background: url("img/header/Adjoy---behance-presentation-4.png") top right no-repeat;
+  background-size: cover; }
+
+.project2 {
+  width: 43.75vmax;
+  height: 27.39583vmax;
+  margin-bottom: 3.125vmax;
+  background: url("img/header/Eneetlab+Supersite-behance preview.png") top right no-repeat;
+  background-size: cover; }
+
+.project3 {
+  width: 43.75vmax;
+  height: 27.39583vmax;
+  margin-bottom: 3.125vmax;
+  background: url("img/header/mbs-behance-preview.png") top right no-repeat;
+  background-size: cover; }
+
+.project {
+  width: 43.75vmax;
+  height: 27.39583vmax;
+  margin-bottom: 3.125vmax;
+  color: #fff;
+  font-size: 2.5vmax;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left; }
+
+.descr {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 2.5vmax;
+  font-weight: normal; }
+
+@media (max-width: 716px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .project1 {
+    width: 100%;
+    height: 62.6vw;
+    margin-bottom: 3.125vmax;
+    background: url("img/header/Adjoy---behance-presentation-4.png") top right no-repeat;
+    background-size: cover; }
+  .project2 {
+    width: 100%;
+    height: 62.6vw;
+    margin-bottom: 3.125vmax;
+    background: url("img/header/Eneetlab+Supersite-behance preview.png") top right no-repeat;
+    background-size: cover; }
+  .project3 {
+    width: 100%;
+    height: 62.6vw;
+    margin-bottom: 3.125vmax;
+    background: url("img/header/mbs-behance-preview.png") top right no-repeat;
+    background-size: cover; }
+  .project {
+    width: 43.75vmax;
+    height: 27.39583vmax;
+    margin-bottom: 3.125vmax;
+    color: #fff;
+    font-size: 2.5vmax;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left; } }
+
+/*----------------БЕГУЩАЯСУКАСТРОКАЕЕНЕОСТАНОВИТЬ_____________________________________________________*/
+.marquee {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: white;
+  font-size: 2.1875vmax;
+  font-weight: normal;
+  text-shadow: 0vmax 0.72917vmax 4.73958vmax #E5E5E5, 0.26042vmax 0.72917vmax 2.34375vmax #E5E5E5, -0.26042vmax 0.72917vmax 2.34375vmax #E5E5E5; }
+
+hr {
+  border: none;
+  color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 2px;
+  position: relative;
+  bottom: -20px;
+  width: 100vw; }
+
+.kost {
+  opacity: 0; }
+
+/*---------------------------------------------------------------ПОДХОД---------------------------------------------------------------------------------------*/
+.podhod {
+  width: 100vw;
+  height: 95.05208vw;
+  background: url("img/header/Group8.png") right bottom no-repeat;
+  background-size: 76.92708vw;
+  padding: 1px; }
+
+.nashpodhod {
+  margin-left: 5.625vw;
+  width: 46.19792vmax;
+  height: 22.86458vmax;
+  margin-top: 42%; }
+
+.nash-podhod {
+  color: #fff;
+  font-size: 5.10417vmax;
+  font-weight: bold; }
+
+.descr_podhod {
+  width: 42.70833vmax;
+  height: 14.94792vmax;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 1.77083vmax;
+  font-weight: normal;
+  Line-height: 2.96875vmax;
+  word-wrap: break-word;
+  text-align: Left;
+  vertical-align: Top; }
+
+/*_____________________________________________________PARRRALAXXXX_________________________________________________________________________*/
+.crew {
+  margin-top: 2.60417vmax;
+  margin-right: 0;
+  position: relative;
+  width: 100vmax;
+  height: 56.25vmax;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.parallax {
+  position: absolute; }
+
+#member1 {
+  width: 14.21875vmax;
+  height: 38.4375vmax;
+  background: url("img/paralax/member1.png") top right no-repeat;
+  background-size: contain;
+  z-index: 600;
+  left: 16.04167vmax;
+  top: 18.22917vmax; }
+
+#member2 {
+  width: 12.34375vmax;
+  height: 36.45833vmax;
+  background: url("img/paralax/member2.png") top right no-repeat;
+  background-size: contain;
+  z-index: 500;
+  left: 3.95833vmax;
+  top: 10.41667vmax; }
+
+#member3 {
+  width: 8.80208vmax;
+  height: 26.04167vmax;
+  background: url("img/paralax/member3.png") top right no-repeat;
+  background-size: contain;
+  z-index: 400;
+  left: 17.70833vmax;
+  top: 11.45833vmax; }
+
+#member4 {
+  width: 4.6875vmax;
+  height: 20.83333vmax;
+  background: url("img/paralax/member4.png") top right no-repeat;
+  background-size: contain;
+  z-index: 300;
+  left: 32.03125vmax;
+  top: 5.20833vmax; }
+
+#member5 {
+  width: 3.125vmax;
+  height: 15.625vmax;
+  background: url("img/paralax/member5.png") top right no-repeat;
+  background-size: contain;
+  z-index: 200;
+  left: 29.27083vmax;
+  top: 15.625vmax; }
+
+#member6 {
+  width: 3.125vmax;
+  height: 15.625vmax;
+  background: url("img/paralax/member6.png") top right no-repeat;
+  background-size: contain;
+  z-index: 100;
+  left: 13.90625vmax;
+  top: 17.1875vmax; }
+
+.pudding {
+  margin: 0.26042vmax 0;
+  width: 42.70833vmax;
+  height: 14.94792vmax;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 1.77083vmax;
+  font-weight: normal;
+  Line-height: 2.96875vmax;
+  word-wrap: break-word;
+  text-align: Left;
+  vertical-align: Top; }
+
+.log-drozd {
+  width: 19.84375vmax;
+  height: 8.02083vmax; }
+
+.uz-button {
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 2.1875vmax;
+  text-shadow: 0px 0.72917vmax 4.73958vmax white; }
+
+.drozdov {
+  margin-right: 9.53125vmax; }
+
+/*_____________________________________ОБСУДИТЬ ПРОЕКТ_____________________________________________________*/
+.obs {
+  margin-top: 0.72917vmax;
+  width: 100vmax;
+  height: 56.25vmax;
+  display: flex;
+  justify-content: center; }
+
+.obsudit {
+  width: 28.75vmax;
+  height: 33.64583vmax; }
+
+.attention {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.72917vmax;
+  font-weight: normal;
+  Line-height: 1.04167vmax;
+  word-wrap: break-word;
+  text-align: Left;
+  vertical-align: Top; }
+
+.footer {
+  width: 100vmax;
+  height: 7.03125vmax;
+  display: flex;
+  justify-content: space-between; }
+
+.logo-footer {
+  margin-top: 1.30208vmax;
+  margin-right: 39.63542vmax;
+  margin-left: 5.625vmax;
+  width: 6.25vw;
+  height: 1.57778vh; }
+
+.phone, .mail {
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 0.9375vmax; }
+
+.social {
+  width: 9.375vmax;
+  height: 2.65625vmax;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5.625vmax; }
+
+.soc {
+  width: 2.65625vmax;
+  height: 2.65625vmax; }
