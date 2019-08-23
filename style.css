@@ -504,8 +504,6 @@ hr {
 
 .logo-footer {
   margin-top: 1.30208vmax;
-  margin-right: 39.63542vmax;
-  margin-left: 5.625vmax;
   width: 6.25vw;
   height: 1.57778vh; }
 
@@ -525,3 +523,19 @@ hr {
 .soc {
   width: 2.65625vmax;
   height: 2.65625vmax; }
+
+.cont_polit {
+  width: 24.47917vw;
+  height: 15.74074vh;
+  margin-right: 24.01042vmax;
+  margin-left: 5.625vmax; }
+
+.polit, .politica {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.72917vmax;
+  font-weight: normal;
+  Line-height: 1.04167vmax;
+  margin-top: 1.04167vmax; }
+
+.polit {
+  margin-right: 2.13542vmax; }
