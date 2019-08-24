@@ -52,7 +52,7 @@ body {
   width: 100vw;
   height: 100vh;
   background: url("img/header/background.jpg") top right no-repeat;
-  background-size: cover; }
+  background-size: contain; }
 
 .header {
   display: flex;
@@ -148,7 +148,9 @@ body {
 .line {
   width: 11.69271vw;
   height: 1px;
-  background-color: #fff; }
+  background-color: #fff;
+  margin-top: 2.55208vmax;
+  margin-right: 1.40625vmax; }
 
 .letters {
   color: #fff;
@@ -487,6 +489,30 @@ hr {
   width: 28.75vmax;
   height: 33.64583vmax; }
 
+#mail-field, #phone-field {
+  width: 100%;
+  height: 3.75vmax;
+  background-color: black;
+  font: normal 1.77083vmax Montserrat;
+  border: none;
+  border-bottom: 2px solid #FFFFFF;
+  color: white;
+  outline: none; }
+
+.submit {
+  width: 100%;
+  height: 5.10417vmax;
+  color: white;
+  border: none;
+  background-color: black;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  vertical-align: top;
+  font: normal 1.77083vmax Montserrat;
+  -webkit-box-shadow: intend white 0 0 40px 0px;
+  overflow: visible; }
+
 .attention {
   color: rgba(255, 255, 255, 0.2);
   font-size: 0.72917vmax;
@@ -534,8 +560,7 @@ hr {
   color: rgba(255, 255, 255, 0.2);
   font-size: 0.72917vmax;
   font-weight: normal;
-  Line-height: 1.04167vmax;
-  margin-top: 1.04167vmax; }
+  Line-height: 1.04167vmax; }
 
 .polit {
   margin-right: 2.13542vmax; }

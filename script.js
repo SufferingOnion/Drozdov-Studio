@@ -1,6 +1,6 @@
 $(function() {
   $('.marquee').marquee({
-    duration: 7000,
+    duration: 14000,
     startVisible: true,
     duplicated: true
   });
