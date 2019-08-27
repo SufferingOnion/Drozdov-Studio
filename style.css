@@ -331,24 +331,31 @@ body {
     text-align: left; } }
 
 /*----------------БЕГУЩАЯСУКАСТРОКАЕЕНЕОСТАНОВИТЬ_____________________________________________________*/
+.lineline {
+  height: 7.8125vmax; }
+
 .marquee {
   display: block;
   width: 100%;
+  height: 7.8125vmax;
   white-space: nowrap;
   overflow: hidden;
   color: white;
   font-size: 2.1875vmax;
   font-weight: normal;
-  text-shadow: 0vmax 0.72917vmax 4.73958vmax #E5E5E5, 0.26042vmax 0.72917vmax 2.34375vmax #E5E5E5, -0.26042vmax 0.72917vmax 2.34375vmax #E5E5E5; }
+  text-shadow: 0px 0.72917vmax 4.73958vmax #FFFFFF; }
 
-hr {
-  border: none;
-  color: rgba(255, 255, 255, 0.1);
-  background-color: rgba(255, 255, 255, 0.1);
-  height: 2px;
+.marquee:after {
+  display: block;
+  opacity: 0.2;
+  width: 100vmax;
+  height: 0.10417vmax;
+  background-color: #fff;
   position: relative;
-  bottom: -20px;
-  width: 100vw; }
+  content: ""; }
+
+.marquee:after {
+  top: 2.86458vmax; }
 
 .kost {
   opacity: 0; }
@@ -483,7 +490,11 @@ hr {
   width: 100vmax;
   height: 56.25vmax;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  overflow: visible; }
+
+form {
+  overflow: visible; }
 
 .obsudit {
   width: 28.75vmax;
@@ -500,18 +511,22 @@ hr {
   outline: none; }
 
 .submit {
-  width: 100%;
-  height: 5.10417vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 18.22917vmax;
+  height: 7.1875vmax;
   color: white;
   border: none;
-  background-color: black;
+  border-radius: 2.60417vmax;
   cursor: pointer;
   padding: 0;
-  text-align: left;
-  vertical-align: top;
   font: normal 1.77083vmax Montserrat;
-  -webkit-box-shadow: intend white 0 0 40px 0px;
-  overflow: visible; }
+  user-select: none; }
+
+.otprzav {
+  display: block;
+  text-shadow: 0px 0.72917vmax 4.73958vmax #FFFFFF; }
 
 .attention {
   color: rgba(255, 255, 255, 0.2);
