@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drozdov Studio</title>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="jquery.mCustomScrollbar.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+<script src="script.js"></script>
+<script src="paralax.js"></script>
+<script src="jquery.mCustomScrollbar.concat.min.js"></script>
+<style>
+html, body{ height: 100%; }
+</style>
+</head>
+<body>
+	<script>
+		(function($){
+			$(window).on("load",function(){
+				
+				$("body").mCustomScrollbar({
+					axis:"y",
+					theme:"minimal"
+				});
+				
+			});
+		})(jQuery);
+	</script>
+<body>
+<div class="intro_proj">
+		<div class="header">
+				<a href="index.html"><img class="logo" src="img/header/logo.svg"></a>
+				<div class="button"><span class="closed"></span></div>
+				<div class="open_menu">
+					<div class="nav__link"><a class="link" href="projects.html">Проекты</a></div>
+					<div class="nav__link"><a class="link" href="#">Студия</a></div>
+					<div class="nav__link"><a class="link" href="#">Контакты</a></div>
+					<div class="nav__link"><a class="link" href="#">Работать у нас</a></div>
+					<div class="nav__link"><a class="link" href="#"><span class="work_with_ass">Начать проект</span></a></div>
+					<div class="nav__link lang"><a class="link" href="#">RU</a></div>
+				</div>
+		</div>
+		<div class="tagline_stud">
+				
+					<span class="tagline_projects">о студии</span>
+		</div>
+</div>
+
+
+<div class="footer">
+	<div class="cont_polit"><img class="logo-footer" src="img/header/logo.svg"><br><br>
+		<a class="polit" href="#">© Nikita Drozdov Studio</a>
+		<a class="politica" href="#">Политика конфиденциальности</a>
+	</div>
+	<div class="phone"><p>8 (928) 423-00-67</p></div>
+	<div class="mail"><p>hello@drozdov.com</p></div>
+	<div class="social">
+		<img class="soc" src="img/footer/vk.png">
+		<img class="soc" src="img/footer/facebook.png">
+		<img class="soc" src="img/footer/inst.png">
+	</div>
+
+</div>
+
+</body>
+</html>

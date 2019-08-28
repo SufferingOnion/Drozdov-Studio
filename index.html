@@ -8,19 +8,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="jquery.mCustomScrollbar.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
 <script src="script.js"></script>
 <script src="paralax.js"></script>
+<script src="jquery.mCustomScrollbar.concat.min.js"></script>
+<style>
+html, body{ height: 100%; }
+</style>
 </head>
 <body>
+	<script>
+		(function($){
+			$(window).on("load",function(){
+				
+				$("body").mCustomScrollbar({
+					axis:"y",
+					theme:"minimal"
+				});
+				
+			});
+		})(jQuery);
+	</script>
 <div class="intro">
 		<div class="header">
-				<img class="logo" src="img/header/logo.svg">
+				<a href="#"><img class="logo" src="img/header/logo.svg"></a>
 				<div class="button"><span class="closed"></span></div>
 				<div class="open_menu">
-					<div class="nav__link"><a class="link" href="#">Проекты</a></div>
-					<div class="nav__link"><a class="link" href="#">Студия</a></div>
+					<div class="nav__link"><a class="link" href="projects.html">Проекты</a></div>
+					<div class="nav__link"><a class="link" href="o_studii.html">Студия</a></div>
 					<div class="nav__link"><a class="link" href="#">Контакты</a></div>
 					<div class="nav__link"><a class="link" href="#">Работать у нас</a></div>
 					<div class="nav__link"><a class="link" href="#"><span class="work_with_ass">Начать проект</span></a></div>
@@ -44,7 +62,7 @@
 		</div>
 		<div class="serv-div"><span class="serv">services</span></div>
 </div>
-<div class="project-block">
+<div class="project-block mCustomScrollbar" data-mcs-theme="dark">
 	
 		<p class="last-project">недавние проекты</p>
 		<div class="projects">

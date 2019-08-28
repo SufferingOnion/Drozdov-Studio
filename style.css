@@ -37,18 +37,14 @@ body {
   font-family: "Montserrat";
   width: 100vmax;
   font-size: 1em;
-  background-color: black; }
+  background-color: black;
+  overflow-x: hidden; }
 
 h1, h2, h3, h4 {
   margin: 0px; }
 
-body {
-  width: 1920px;
-  margin: 0px;
-  overflow-x: hidden; }
-
 /*---------------Начало----------------------------------------------------------------------------------------------*/
-.intro {
+.intro, .intro_proj {
   width: 100vw;
   height: 100vh;
   background: url("img/header/background.jpg") top right no-repeat;
@@ -152,7 +148,7 @@ body {
   margin-top: 2.55208vmax;
   margin-right: 1.40625vmax; }
 
-.letters {
+.letters, .tagline_projects {
   color: #fff;
   display: block;
   font-size: 5.10417vmax;
@@ -579,3 +575,64 @@ form {
 
 .polit {
   margin-right: 2.13542vmax; }
+
+/*???????????????????????????????????????????     PROJECTS      ????????????????????????????????????????????????????*/
+.intro_proj {
+  width: 100vmax;
+  height: 880;
+  background-image: none;
+  position: relative;
+  margin-bottom: -6.82292vmax; }
+
+.tagline52 {
+  margin-top: 43.14815vh;
+  height: 11.97917vmax;
+  width: 56.25vmax;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1px; }
+
+.fiftytwo {
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  font-size: 11.92708vmax;
+  font-weight: bold;
+  margin-left: 3.85417vmax; }
+
+.line_tag_line {
+  width: 11.69271vmax;
+  height: 1px;
+  background-color: black;
+  margin-bottom: 2.55208vmax; }
+
+.tagline_projects:after {
+  content: "";
+  display: block;
+  width: 11.69271vmax;
+  height: 0.05208vmax;
+  background-color: #fff;
+  position: relative; }
+
+.tagline_projects:after {
+  bottom: 1.40625vmax;
+  right: 13.22917vmax; }
+
+.projects52 {
+  width: 88.80208vmax;
+  height: 113.48958vmax;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 27.39583vmax 27.39583vmax 27.39583vmax 27.39583vmax;
+  grid-gap: 1.30208vmax;
+  margin: 0 auto 13.33333vmax auto; }
+
+.tagline_stud {
+  margin-top: 43.14815vh;
+  height: 11.97917vmax;
+  width: 36.45833vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px; }
