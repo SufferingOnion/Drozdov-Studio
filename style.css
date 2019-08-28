@@ -37,8 +37,7 @@ body {
   font-family: "Montserrat";
   width: 100vmax;
   font-size: 1em;
-  background-color: black;
-  overflow-x: hidden; }
+  background-color: black; }
 
 h1, h2, h3, h4 {
   margin: 0px; }
@@ -611,7 +610,7 @@ form {
   content: "";
   display: block;
   width: 11.69271vmax;
-  height: 0.05208vmax;
+  height: 0.10417vmax;
   background-color: #fff;
   position: relative; }
 
@@ -628,11 +627,136 @@ form {
   grid-gap: 1.30208vmax;
   margin: 0 auto 13.33333vmax auto; }
 
+/*---------------------------------------            О СТУДИИ            -------------------------------___--__-__--*/
+.o_studio {
+  background: black; }
+
 .tagline_stud {
+  display: block;
   margin-top: 43.14815vh;
-  height: 11.97917vmax;
-  width: 36.45833vmax;
+  margin-left: 13.125vmax;
+  height: 14.63542vmax;
+  width: 58.75vmax;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 1px; }
+
+.descriptions {
+  display: block;
+  width: 58.75vmax;
+  height: 9.01042vmax;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 1.77083vmax;
+  font-weight: normal;
+  line-height: 2.96875vmax; }
+
+.komanda {
+  width: 100vmax;
+  height: 63.02083vmax;
+  margin-bottom: 18.48958vmax; }
+
+.komand {
+  margin-left: 13.125vmax; }
+
+.crew_comanda {
+  width: 77.91667vmax;
+  height: 50.57292vmax;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 19.27083vmax 19.27083vmax;
+  grid-gap: 11.66667vmax;
+  margin: 0 auto 0 5.83333vmax; }
+
+.crew1 {
+  width: 18.125vmax;
+  height: 19.27083vmax;
+  background: url("img/crew/image1.png") top left no-repeat;
+  background-size: contain; }
+
+.crew2 {
+  width: 18.125vmax;
+  height: 19.27083vmax;
+  background: url("img/crew/image2.png") top left no-repeat;
+  background-size: contain; }
+
+.crew3 {
+  width: 18.125vmax;
+  height: 19.27083vmax;
+  background: url("img/crew/image3.png") top left no-repeat;
+  background-size: contain; }
+
+.crew4 {
+  width: 18.125vmax;
+  height: 19.27083vmax;
+  background: url("img/crew/image4.png") top left no-repeat;
+  background-size: contain; }
+
+.crew5 {
+  width: 18.125vmax;
+  height: 19.27083vmax;
+  background: url("img/crew/image5.png") top left no-repeat;
+  background-size: contain; }
+
+.cpezia {
+  position: relative;
+  top: 13.02083vmax;
+  left: 3.17708vmax;
+  color: white;
+  font-size: 1.77083vmax;
+  font-weight: normal;
+  line-height: 0.05208vmax; }
+
+.cpezia2 {
+  color: white;
+  font-size: 1.04167vmax;
+  font-weight: normal; }
+
+.work_with_ass-block {
+  width: 100vmax;
+  height: 38.4375vmax;
+  display: flex;
+  justify-content: space-evenly; }
+
+.samurai {
+  width: 25.625vmax;
+  height: 38.4375vmax;
+  background: url("img/crew/samurai.png") top left no-repeat;
+  background-size: contain; }
+
+.go_s_nami_u_nas_horosho {
+  width: 48.07292vmax;
+  height: 31.25vmax;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+
+.zaglav {
+  display: block;
+  margin: 0;
+  color: white;
+  font-size: 5.10417vmax;
+  font-weight: bold;
+  line-height: 5.20833vmax; }
+
+.priziv {
+  display: block;
+  width: 48.07292vmax;
+  height: 9.01042vmax;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 1.77083vmax;
+  font-weight: normal;
+  line-height: 2.96875vmax; }
+
+.phone2, .mail2 {
+  width: 15.67708vmax;
+  vertical-align: bottom;
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1.77083vmax;
+  display: block; }
+
+.mail2 {
+  margin-right: 11.82292vmax; }
