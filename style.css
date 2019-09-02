@@ -175,18 +175,18 @@ h1, h2, h3, h4 {
 .project-block {
   width: 100vw;
   min-height: 89.27083vmax;
-  margin-top: 27.5vh; }
+  margin-top: 27.5vh;
+  margin-left: 5.625vw; }
 
 .last-project {
   color: #fff;
-  margin-left: 5.625vw;
   font-size: 5.44444rem;
   font-weight: bold; }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: space-evenly; }
 
 .project1 {
