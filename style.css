@@ -36,7 +36,7 @@ body {
   margin: 0;
   font-family: "Montserrat";
   width: 100vmax;
-  font-size: 1em;
+  font-size: rem;
   background-color: black; }
 
 h1, h2, h3, h4 {
@@ -76,64 +76,7 @@ h1, h2, h3, h4 {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 0.9375vmax; }
-
-/*-----------------Мобильный вид меню----------------------------------------------------*/
-@media all and (max-width: 780px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 50vh;
-    width: 100vw; }
-  .open_menu {
-    margin-left: auto;
-    margin-right: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 185px; }
-  .button {
-    margin-right: 5%; }
-  .logo {
-    display: inline-block;
-    width: 120px;
-    margin-right: 20%;
-    margin-left: 5%; }
-  .link {
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    font-weight: normal; }
-  .lang {
-    margin-right: 3%;
-    margin-left: 1.5%; }
-  .button {
-    width: 26px;
-    height: 10px; }
-  .closed {
-    display: block;
-    width: 100vw;
-    height: 2px;
-    background-color: #fff; }
-  .closed::after {
-    display: block;
-    width: 26px;
-    height: 2px;
-    background-color: #fff;
-    position: relative;
-    content: ""; }
-  .closed::after {
-    top: 10px; }
-  .opened {
-    transform: rotate(45deg); }
-  .opened::after {
-    top: 0px;
-    transform: rotate(-90deg); } }
-
-.work_with_ass {
-  text-shadow: 0 0 0.5em white, 0 0 0.4em white; }
+  font-size: 1rem; }
 
 /*-------------------Буквы начало--------------------------------*/
 .tagline {
@@ -150,19 +93,19 @@ h1, h2, h3, h4 {
 .letters, .tagline_projects {
   color: #fff;
   display: block;
-  font-size: 5.10417vmax;
+  font-size: 5.44444rem;
   font-weight: bold;
-  line-height: 4.16667vmax; }
+  line-height: 4.44444rem; }
 
 .bukva {
-  font-size: 5.10417vmax;
+  font-size: 5.44444rem;
   font-weight: bold;
   opacity: 0;
-  line-height: 4.16667vmax; }
+  line-height: 4.44444rem; }
 
 .dorogo {
   color: transparent;
-  line-height: 4.16667vmax;
+  line-height: 4.44444rem;
   -webkit-text-stroke: 1px white; }
 
 /*--------------- СЕРВАЙСЕЗ -----------------------------------------------------------------------------------------*/
@@ -211,7 +154,7 @@ h1, h2, h3, h4 {
 
 .predlog {
   color: #fff;
-  font-size: 1.45833vmax;
+  font-size: 1.55556rem;
   text-decoration: none;
   font-weight: bold;
   position: absolute;
@@ -222,15 +165,11 @@ h1, h2, h3, h4 {
 .serv {
   color: transparent;
   -webkit-text-stroke: 2px white;
-  font-size: 11.92708vmax;
+  font-size: 12.72222rem;
   font-weight: bold;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   margin-left: 25%; }
-
-@media (max-width: 780px) {
-  .serv-div {
-    display: none; } }
 
 /*--------------------------Недавние проекты-------------------------------------------------------------------------------*/
 .project-block {
@@ -241,7 +180,7 @@ h1, h2, h3, h4 {
 .last-project {
   color: #fff;
   margin-left: 5.625vw;
-  font-size: 5.10417vmax;
+  font-size: 5.44444rem;
   font-weight: bold; }
 
 .projects {
@@ -276,7 +215,7 @@ h1, h2, h3, h4 {
   height: 27.39583vmax;
   margin-bottom: 3.125vmax;
   color: #fff;
-  font-size: 2.5vmax;
+  font-size: 2.66667rem;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -286,44 +225,8 @@ h1, h2, h3, h4 {
 
 .descr {
   color: rgba(255, 255, 255, 0.2);
-  font-size: 2.5vmax;
+  font-size: 2.66667rem;
   font-weight: normal; }
-
-@media (max-width: 716px) {
-  .projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
-  .project1 {
-    width: 100%;
-    height: 62.6vw;
-    margin-bottom: 3.125vmax;
-    background: url("img/header/Adjoy---behance-presentation-4.png") top right no-repeat;
-    background-size: cover; }
-  .project2 {
-    width: 100%;
-    height: 62.6vw;
-    margin-bottom: 3.125vmax;
-    background: url("img/header/Eneetlab+Supersite-behance preview.png") top right no-repeat;
-    background-size: cover; }
-  .project3 {
-    width: 100%;
-    height: 62.6vw;
-    margin-bottom: 3.125vmax;
-    background: url("img/header/mbs-behance-preview.png") top right no-repeat;
-    background-size: cover; }
-  .project {
-    width: 43.75vmax;
-    height: 27.39583vmax;
-    margin-bottom: 3.125vmax;
-    color: #fff;
-    font-size: 2.5vmax;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: left; } }
 
 /*----------------БЕГУЩАЯСУКАСТРОКАЕЕНЕОСТАНОВИТЬ_____________________________________________________*/
 .lineline {
@@ -336,7 +239,7 @@ h1, h2, h3, h4 {
   white-space: nowrap;
   overflow: hidden;
   color: white;
-  font-size: 2.1875vmax;
+  font-size: 2.33333rem;
   font-weight: normal;
   text-shadow: 0px 0.72917vmax 4.73958vmax #FFFFFF; }
 
@@ -371,14 +274,14 @@ h1, h2, h3, h4 {
 
 .nash-podhod {
   color: #fff;
-  font-size: 5.10417vmax;
+  font-size: 5.44444rem;
   font-weight: bold; }
 
 .descr_podhod {
   width: 42.70833vmax;
   height: 14.94792vmax;
   color: rgba(255, 255, 255, 0.2);
-  font-size: 1.77083vmax;
+  font-size: 1.88889rem;
   font-weight: normal;
   Line-height: 2.96875vmax;
   word-wrap: break-word;
@@ -386,79 +289,72 @@ h1, h2, h3, h4 {
   vertical-align: Top; }
 
 /*_____________________________________________________PARRRALAXXXX_________________________________________________________________________*/
-.crew {
+.container {
+  margin: 0 auto;
+  width: 100vmax;
+  padding: 10px;
+  position: relative; }
+
+.scene {
   margin-top: 2.60417vmax;
   margin-right: 0;
   position: relative;
   width: 100vmax;
-  height: 56.25vmax;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; }
+  height: 56.25vmax; }
 
-.parallax {
-  position: absolute; }
-
-#member1 {
+.mamber1 {
+  position: absolute;
   width: 14.21875vmax;
   height: 38.4375vmax;
-  background: url("img/paralax/member1.png") top right no-repeat;
-  background-size: contain;
-  z-index: 600;
   left: 16.04167vmax;
   top: 18.22917vmax; }
 
-#member2 {
+.mamber2 {
+  position: absolute;
   width: 12.34375vmax;
   height: 36.45833vmax;
-  background: url("img/paralax/member2.png") top right no-repeat;
-  background-size: contain;
-  z-index: 500;
   left: 3.95833vmax;
   top: 10.41667vmax; }
 
-#member3 {
+.mamber3 {
+  position: absolute;
   width: 8.80208vmax;
   height: 26.04167vmax;
-  background: url("img/paralax/member3.png") top right no-repeat;
-  background-size: contain;
-  z-index: 400;
   left: 17.70833vmax;
   top: 11.45833vmax; }
 
-#member4 {
+.mamber4 {
+  position: absolute;
   width: 4.6875vmax;
   height: 20.83333vmax;
-  background: url("img/paralax/member4.png") top right no-repeat;
-  background-size: contain;
-  z-index: 300;
   left: 32.03125vmax;
   top: 5.20833vmax; }
 
-#member5 {
+.mamber5 {
+  position: absolute;
   width: 3.125vmax;
   height: 15.625vmax;
-  background: url("img/paralax/member5.png") top right no-repeat;
-  background-size: contain;
-  z-index: 200;
   left: 29.27083vmax;
   top: 15.625vmax; }
 
-#member6 {
+.mamber6 {
+  position: absolute;
   width: 3.125vmax;
   height: 15.625vmax;
-  background: url("img/paralax/member6.png") top right no-repeat;
-  background-size: contain;
-  z-index: 100;
   left: 13.90625vmax;
   top: 17.1875vmax; }
+
+.drozdov {
+  position: absolute;
+  left: 52.08333vmax;
+  top: 13.02083vmax; }
 
 .pudding {
   margin: 0.26042vmax 0;
   width: 42.70833vmax;
   height: 14.94792vmax;
   color: rgba(255, 255, 255, 0.2);
-  font-size: 1.77083vmax;
+  font-size: 1.88889rem;
   font-weight: normal;
   Line-height: 2.96875vmax;
   word-wrap: break-word;
@@ -473,11 +369,8 @@ h1, h2, h3, h4 {
   color: #fff;
   text-decoration: none;
   font-weight: normal;
-  font-size: 2.1875vmax;
+  font-size: 2.33333rem;
   text-shadow: 0px 0.72917vmax 4.73958vmax white; }
-
-.drozdov {
-  margin-right: 9.53125vmax; }
 
 /*_____________________________________ОБСУДИТЬ ПРОЕКТ_____________________________________________________*/
 .obs {
@@ -525,7 +418,7 @@ form {
 
 .attention {
   color: rgba(255, 255, 255, 0.2);
-  font-size: 0.72917vmax;
+  font-size: 0.77778rem;
   font-weight: normal;
   Line-height: 1.04167vmax;
   word-wrap: break-word;
@@ -547,7 +440,7 @@ form {
   color: #fff;
   text-decoration: none;
   font-weight: normal;
-  font-size: 0.9375vmax; }
+  font-size: 1rem; }
 
 .social {
   width: 9.375vmax;
@@ -568,7 +461,7 @@ form {
 
 .polit, .politica {
   color: rgba(255, 255, 255, 0.2);
-  font-size: 0.72917vmax;
+  font-size: 0.77778rem;
   font-weight: normal;
   Line-height: 1.04167vmax; }
 
@@ -596,7 +489,7 @@ form {
   display: block;
   color: transparent;
   -webkit-text-stroke: 2px white;
-  font-size: 11.92708vmax;
+  font-size: 12.72222rem;
   font-weight: bold;
   margin-left: 3.85417vmax; }
 
@@ -648,7 +541,7 @@ form {
   width: 58.75vmax;
   height: 9.01042vmax;
   color: rgba(255, 255, 255, 0.2);
-  font-size: 1.77083vmax;
+  font-size: 1.88889rem;
   font-weight: normal;
   line-height: 2.96875vmax; }
 
@@ -704,13 +597,13 @@ form {
   top: 13.02083vmax;
   left: 3.17708vmax;
   color: white;
-  font-size: 1.77083vmax;
+  font-size: 1.88889rem;
   font-weight: normal;
   line-height: 0.05208vmax; }
 
 .cpezia2 {
   color: white;
-  font-size: 1.04167vmax;
+  font-size: 1.11111rem;
   font-weight: normal; }
 
 .work_with_ass-block {
@@ -736,7 +629,7 @@ form {
   display: block;
   margin: 0;
   color: white;
-  font-size: 5.10417vmax;
+  font-size: 5.44444rem;
   font-weight: bold;
   line-height: 5.20833vmax; }
 
@@ -745,7 +638,7 @@ form {
   width: 48.07292vmax;
   height: 9.01042vmax;
   color: rgba(255, 255, 255, 0.2);
-  font-size: 1.77083vmax;
+  font-size: 1.88889rem;
   font-weight: normal;
   line-height: 2.96875vmax; }
 
@@ -755,8 +648,116 @@ form {
   color: #fff;
   text-decoration: none;
   font-weight: normal;
-  font-size: 1.77083vmax;
+  font-size: 1.88889rem;
   display: block; }
 
 .mail2 {
   margin-right: 11.82292vmax; }
+
+/*-----------------Мобильный вид меню----------------------------------------------------*/
+@media all and (max-width: 425px) {
+  .intro {
+    height: 100vh;
+    width: 100vw;
+    background: url("img/header/background_min.jpg") top right no-repeat;
+    background-size: cover; }
+  .logo {
+    width: 4.27083vmax;
+    height: 0.625vmax; }
+  .open_menu {
+    display: none; }
+  .opened_menu {
+    margin-left: auto;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 185px; }
+  .menu_icon {
+    width: 1.35417vmax;
+    height: 0.52083vmax;
+    display: flex;
+    align-items: center;
+    margin-right: 5%; }
+  .menu_icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff; }
+  .menu_icon span::after {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    top: 0.52083vmax;
+    content: ""; }
+  .logo {
+    display: inline-block;
+    width: 120px;
+    margin-right: 20%;
+    margin-left: 5%; }
+  .link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal; }
+  .lang {
+    margin-right: 3%;
+    margin-left: 1.5%; }
+  .work_with_ass {
+    text-shadow: 0 0 0.5em white, 0 0 0.4em white; }
+  .line {
+    display: none; }
+  .tagline {
+    margin-top: 43.14815vh;
+    display: flex; }
+  .letters {
+    color: #fff;
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem; }
+  .bukva {
+    font-weight: bold;
+    opacity: 0; }
+  .dorogo {
+    color: transparent;
+    -webkit-text-stroke: 1px white; }
+  .serv-div {
+    display: none; }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .project1 {
+    width: 100%;
+    height: 62.6vw;
+    margin-bottom: 3.125vmax;
+    background: url("img/header/Adjoy---behance-presentation-4.png") top right no-repeat;
+    background-size: cover; }
+  .project2 {
+    width: 100%;
+    height: 62.6vw;
+    margin-bottom: 3.125vmax;
+    background: url("img/header/Eneetlab+Supersite-behance preview.png") top right no-repeat;
+    background-size: cover; }
+  .project3 {
+    width: 100%;
+    height: 62.6vw;
+    margin-bottom: 3.125vmax;
+    background: url("img/header/mbs-behance-preview.png") top right no-repeat;
+    background-size: cover; }
+  .project {
+    width: 43.75vmax;
+    height: 27.39583vmax;
+    margin-bottom: 3.125vmax;
+    color: #fff;
+    font-size: 2.66667rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left; } }

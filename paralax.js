@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  var elem = $('.crew'),
+  var elem = $('.body'),
       pos = elem.offset(),
       elem_left = pos.left,
       elem_top = pos.top,
@@ -10,10 +10,10 @@ $(document).ready(function(){
       y_center;
 
 
-  $('.crew').mousemove(function(e){
+  $('.body').mousemove(function(e){
 
     x_center = ( elem_width / 2 ) - ( e.pageX - elem_left );
-    y_center = ( elem_height / 2 ) - ( e.pageY - elem_top );
+    y_center = ( - elem_height / 2 ) - e.pageY;
 
     $('.parallax').each(function(){
 

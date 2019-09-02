@@ -7,19 +7,21 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+<script src="jquery.min.js"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="jquery.mCustomScrollbar.css">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
-<script src="script.js"></script>
-<script src="paralax.js"></script>
+
+<script scr="click.js"></script>
 <script src="jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="script.js"></script>
+
+
 <style>
 html, body{ height: 100%; }
 </style>
 </head>
-<body>
+<body class="body">
 	<script>
 		(function($){
 			$(window).on("load",function(){
@@ -35,7 +37,7 @@ html, body{ height: 100%; }
 <div class="intro">
 		<div class="header">
 				<a href="#"><img class="logo" src="img/header/logo.svg"></a>
-				<div class="button"><span class="closed"></span></div>
+				<div class="menu_icon"><span></span></div>
 				<div class="open_menu">
 					<div class="nav__link"><a class="link" href="projects.html">Проекты</a></div>
 					<div class="nav__link"><a class="link" href="o_studii.html">Студия</a></div>
@@ -54,6 +56,7 @@ html, body{ height: 100%; }
 			
 		</div>
 </div>
+
 <div class="web-serv">
 		<div class="viebon">
 			<div class="devimg"><span class="predlog">разработка сайта</span></div>
@@ -62,7 +65,7 @@ html, body{ height: 100%; }
 		</div>
 		<div class="serv-div"><span class="serv">services</span></div>
 </div>
-<div class="project-block mCustomScrollbar" data-mcs-theme="dark">
+<div class="project-block">
 	
 		<p class="last-project">недавние проекты</p>
 		<div class="projects">
@@ -72,29 +75,41 @@ html, body{ height: 100%; }
 		</div>
 		
 </div>
-<div class="lineline">
-<span class="marquee"><span id="span_marquee">смотреть портфолио <span class="kost">gg</span> смотреть портфолио<span class="kost">gg</span>смотреть портфолио <span class="kost">gg</span> смотреть портфолио <span class="kost">gg</span> смотреть портфолио <span class="kost">gg</span> смотреть портфолио   </span></span>
-
-</div>
-
+<a href="projects.html">
+	<div class="lineline">
+		<span class="marquee"><span id="span_c">смотреть портфолио <span class="kost">gg</span> смотреть портфолио<span class="kost">gg</span>смотреть портфолио <span class="kost">gg</span> смотреть портфолио <span class="kost">gg</span> смотреть портфолио <span class="kost">gg</span> смотреть портфолио   </span></span>
+	</div>
+</a>
 
 <div class="podhod">
 	<div class="nashpodhod"><h2 class="nash-podhod">наш подход</h2><p class="descr_podhod">Мы за индивидуальность и уникальность каждого проекта, поэтому мы тщательно анализируем задачу и разрабатываем концепцию, которая работает и выделяет среди конкурентов на рынке</p></div>
 </div>
 
-<div class="crew">
-	<div id="member1" class="parallax" data-speed="5"></div>
-	<div id="member2" class="parallax" data-speed="4"></div>
-	<div id="member3" class="parallax" data-speed="2"></div>
-	<div id="member4" class="parallax" data-speed="1"></div>
-	<div id="member5" class="parallax" data-speed="-1"></div>
-	<div id="member6" class="parallax" data-speed="-2"></div>
-	<div class="drozdov">
-		<img class="log-drozd" src="img/header/logo.svg">
-		<p class="pudding">Drozdov Studio — это команда амбициозных специалистов по дизайну и программированию, которые каждый день воплощают новые идеи</p>
-		<a class='uz-button' href="#">узнать больше</a>
-	</div>
+<div id="container" class="container">
+		<div class="drozdov">
+			<img class="log-drozd" src="img/header/logo.svg">
+			<p class="pudding">Drozdov Studio — это команда амбициозных специалистов по дизайну и программированию, которые каждый день воплощают новые идеи</p>
+			<a class='uz-button' href="#">узнать больше</a>
+		</div>
+
+		<div id="scene" class="scene">
+			<div data-depth="1.00"><img class="mamber1" src="img\paralax\member1.png"></div>
+			<div data-depth="0.80"><img class="mamber2" src="img\paralax\member2.png"></div>
+			<div data-depth="0.60"><img class="mamber3" src="img\paralax\member3.png"></div>
+			<div data-depth="0.40"><img class="mamber4" src="img\paralax\member4.png"></div>
+			<div data-depth="0.20"><img class="mamber5" src="img\paralax\member5.png"></div>
+		</div>
+		
 </div>
+
+	<!-- Scripts -->
+	<script src="parallax.js"></script>
+	<script>
+
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
 
 <div class="obs">
 
@@ -128,6 +143,7 @@ html, body{ height: 100%; }
 	</div>
 
 </div>
+<script defer src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
 
 </body>
 </html>
