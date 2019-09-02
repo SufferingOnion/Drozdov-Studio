@@ -181,7 +181,8 @@ h1, h2, h3, h4 {
 .last-project {
   color: #fff;
   font-size: 5.44444rem;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-left: -0.3125vw; }
 
 .projects {
   display: flex;
